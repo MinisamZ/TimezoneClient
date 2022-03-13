@@ -50,21 +50,6 @@ public interface WebServiceTest {
      * 
      * @param arg0
      * @return
-     *     returns java.util.List<kz.iitu.City>
-     */
-    @WebMethod
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "getListCityByCode", targetNamespace = "http://iitu.kz/", className = "kz.iitu.GetListCityByCode")
-    @ResponseWrapper(localName = "getListCityByCodeResponse", targetNamespace = "http://iitu.kz/", className = "kz.iitu.GetListCityByCodeResponse")
-    @Action(input = "http://iitu.kz/WebServiceTest/getListCityByCodeRequest", output = "http://iitu.kz/WebServiceTest/getListCityByCodeResponse")
-    public List<City> getListCityByCode(
-        @WebParam(name = "arg0", targetNamespace = "")
-        String arg0);
-
-    /**
-     * 
-     * @param arg0
-     * @return
      *     returns kz.iitu.City
      * @throws Exception_Exception
      */
@@ -98,6 +83,18 @@ public interface WebServiceTest {
 
     /**
      * 
+     * @return
+     *     returns java.util.List<java.lang.String>
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "getListOfCountryCode", targetNamespace = "http://iitu.kz/", className = "kz.iitu.GetListOfCountryCode")
+    @ResponseWrapper(localName = "getListOfCountryCodeResponse", targetNamespace = "http://iitu.kz/", className = "kz.iitu.GetListOfCountryCodeResponse")
+    @Action(input = "http://iitu.kz/WebServiceTest/getListOfCountryCodeRequest", output = "http://iitu.kz/WebServiceTest/getListOfCountryCodeResponse")
+    public List<String> getListOfCountryCode();
+
+    /**
+     * 
      * @param arg1
      * @param arg0
      * @return
@@ -113,5 +110,44 @@ public interface WebServiceTest {
         String arg0,
         @WebParam(name = "arg1", targetNamespace = "")
         String arg1);
+
+    /**
+     * 
+     * @return
+     *     returns java.util.List<java.lang.String>
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "getListOfTimezone", targetNamespace = "http://iitu.kz/", className = "kz.iitu.GetListOfTimezone")
+    @ResponseWrapper(localName = "getListOfTimezoneResponse", targetNamespace = "http://iitu.kz/", className = "kz.iitu.GetListOfTimezoneResponse")
+    @Action(input = "http://iitu.kz/WebServiceTest/getListOfTimezoneRequest", output = "http://iitu.kz/WebServiceTest/getListOfTimezoneResponse")
+    public List<String> getListOfTimezone();
+
+    /**
+     * 
+     * @param arg0
+     * @return
+     *     returns java.util.List<kz.iitu.City>
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "getListCityByCode", targetNamespace = "http://iitu.kz/", className = "kz.iitu.GetListCityByCode")
+    @ResponseWrapper(localName = "getListCityByCodeResponse", targetNamespace = "http://iitu.kz/", className = "kz.iitu.GetListCityByCodeResponse")
+    @Action(input = "http://iitu.kz/WebServiceTest/getListCityByCodeRequest", output = "http://iitu.kz/WebServiceTest/getListCityByCodeResponse")
+    public List<City> getListCityByCode(
+        @WebParam(name = "arg0", targetNamespace = "")
+        String arg0);
+
+    /**
+     * 
+     * @return
+     *     returns java.util.List<kz.iitu.City>
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "getListCity", targetNamespace = "http://iitu.kz/", className = "kz.iitu.GetListCity")
+    @ResponseWrapper(localName = "getListCityResponse", targetNamespace = "http://iitu.kz/", className = "kz.iitu.GetListCityResponse")
+    @Action(input = "http://iitu.kz/WebServiceTest/getListCityRequest", output = "http://iitu.kz/WebServiceTest/getListCityResponse")
+    public List<City> getListCity();
 
 }

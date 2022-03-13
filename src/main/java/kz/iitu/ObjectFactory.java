@@ -24,16 +24,22 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
+    private final static QName _GetListCityResponse_QNAME = new QName("http://iitu.kz/", "getListCityResponse");
+    private final static QName _GetCityByCityName_QNAME = new QName("http://iitu.kz/", "getCityByCityName");
+    private final static QName _GetListCity_QNAME = new QName("http://iitu.kz/", "getListCity");
+    private final static QName _GetListCityByZoneName_QNAME = new QName("http://iitu.kz/", "getListCityByZoneName");
+    private final static QName _GetListOfTimezone_QNAME = new QName("http://iitu.kz/", "getListOfTimezone");
+    private final static QName _GetListOfTimezoneResponse_QNAME = new QName("http://iitu.kz/", "getListOfTimezoneResponse");
+    private final static QName _GetListOfCountryCodeResponse_QNAME = new QName("http://iitu.kz/", "getListOfCountryCodeResponse");
+    private final static QName _GetCityByCityNameResponse_QNAME = new QName("http://iitu.kz/", "getCityByCityNameResponse");
     private final static QName _GetListCityByZoneNameAndByCode_QNAME = new QName("http://iitu.kz/", "getListCityByZoneNameAndByCode");
     private final static QName _Exception_QNAME = new QName("http://iitu.kz/", "Exception");
     private final static QName _GetListCityByCodeResponse_QNAME = new QName("http://iitu.kz/", "getListCityByCodeResponse");
     private final static QName _GetListCityByZoneNameResponse_QNAME = new QName("http://iitu.kz/", "getListCityByZoneNameResponse");
-    private final static QName _GetCityByCityName_QNAME = new QName("http://iitu.kz/", "getCityByCityName");
-    private final static QName _GetListCityByZoneName_QNAME = new QName("http://iitu.kz/", "getListCityByZoneName");
     private final static QName _GetString_QNAME = new QName("http://iitu.kz/", "getString");
     private final static QName _GetListCityByZoneNameAndByCodeResponse_QNAME = new QName("http://iitu.kz/", "getListCityByZoneNameAndByCodeResponse");
+    private final static QName _GetListOfCountryCode_QNAME = new QName("http://iitu.kz/", "getListOfCountryCode");
     private final static QName _GetListCityByCode_QNAME = new QName("http://iitu.kz/", "getListCityByCode");
-    private final static QName _GetCityByCityNameResponse_QNAME = new QName("http://iitu.kz/", "getCityByCityNameResponse");
     private final static QName _GetStringResponse_QNAME = new QName("http://iitu.kz/", "getStringResponse");
 
     /**
@@ -44,19 +50,19 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link GetListOfCountryCode }
+     * 
+     */
+    public GetListOfCountryCode createGetListOfCountryCode() {
+        return new GetListOfCountryCode();
+    }
+
+    /**
      * Create an instance of {@link GetListCityByCode }
      * 
      */
     public GetListCityByCode createGetListCityByCode() {
         return new GetListCityByCode();
-    }
-
-    /**
-     * Create an instance of {@link GetCityByCityNameResponse }
-     * 
-     */
-    public GetCityByCityNameResponse createGetCityByCityNameResponse() {
-        return new GetCityByCityNameResponse();
     }
 
     /**
@@ -73,22 +79,6 @@ public class ObjectFactory {
      */
     public GetListCityByZoneNameAndByCodeResponse createGetListCityByZoneNameAndByCodeResponse() {
         return new GetListCityByZoneNameAndByCodeResponse();
-    }
-
-    /**
-     * Create an instance of {@link GetCityByCityName }
-     * 
-     */
-    public GetCityByCityName createGetCityByCityName() {
-        return new GetCityByCityName();
-    }
-
-    /**
-     * Create an instance of {@link GetListCityByZoneName }
-     * 
-     */
-    public GetListCityByZoneName createGetListCityByZoneName() {
-        return new GetListCityByZoneName();
     }
 
     /**
@@ -132,11 +122,147 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link GetListOfCountryCodeResponse }
+     * 
+     */
+    public GetListOfCountryCodeResponse createGetListOfCountryCodeResponse() {
+        return new GetListOfCountryCodeResponse();
+    }
+
+    /**
+     * Create an instance of {@link GetCityByCityNameResponse }
+     * 
+     */
+    public GetCityByCityNameResponse createGetCityByCityNameResponse() {
+        return new GetCityByCityNameResponse();
+    }
+
+    /**
+     * Create an instance of {@link GetCityByCityName }
+     * 
+     */
+    public GetCityByCityName createGetCityByCityName() {
+        return new GetCityByCityName();
+    }
+
+    /**
+     * Create an instance of {@link GetListCity }
+     * 
+     */
+    public GetListCity createGetListCity() {
+        return new GetListCity();
+    }
+
+    /**
+     * Create an instance of {@link GetListCityByZoneName }
+     * 
+     */
+    public GetListCityByZoneName createGetListCityByZoneName() {
+        return new GetListCityByZoneName();
+    }
+
+    /**
+     * Create an instance of {@link GetListOfTimezone }
+     * 
+     */
+    public GetListOfTimezone createGetListOfTimezone() {
+        return new GetListOfTimezone();
+    }
+
+    /**
+     * Create an instance of {@link GetListOfTimezoneResponse }
+     * 
+     */
+    public GetListOfTimezoneResponse createGetListOfTimezoneResponse() {
+        return new GetListOfTimezoneResponse();
+    }
+
+    /**
+     * Create an instance of {@link GetListCityResponse }
+     * 
+     */
+    public GetListCityResponse createGetListCityResponse() {
+        return new GetListCityResponse();
+    }
+
+    /**
      * Create an instance of {@link City }
      * 
      */
     public City createCity() {
         return new City();
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetListCityResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://iitu.kz/", name = "getListCityResponse")
+    public JAXBElement<GetListCityResponse> createGetListCityResponse(GetListCityResponse value) {
+        return new JAXBElement<GetListCityResponse>(_GetListCityResponse_QNAME, GetListCityResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetCityByCityName }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://iitu.kz/", name = "getCityByCityName")
+    public JAXBElement<GetCityByCityName> createGetCityByCityName(GetCityByCityName value) {
+        return new JAXBElement<GetCityByCityName>(_GetCityByCityName_QNAME, GetCityByCityName.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetListCity }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://iitu.kz/", name = "getListCity")
+    public JAXBElement<GetListCity> createGetListCity(GetListCity value) {
+        return new JAXBElement<GetListCity>(_GetListCity_QNAME, GetListCity.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetListCityByZoneName }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://iitu.kz/", name = "getListCityByZoneName")
+    public JAXBElement<GetListCityByZoneName> createGetListCityByZoneName(GetListCityByZoneName value) {
+        return new JAXBElement<GetListCityByZoneName>(_GetListCityByZoneName_QNAME, GetListCityByZoneName.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetListOfTimezone }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://iitu.kz/", name = "getListOfTimezone")
+    public JAXBElement<GetListOfTimezone> createGetListOfTimezone(GetListOfTimezone value) {
+        return new JAXBElement<GetListOfTimezone>(_GetListOfTimezone_QNAME, GetListOfTimezone.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetListOfTimezoneResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://iitu.kz/", name = "getListOfTimezoneResponse")
+    public JAXBElement<GetListOfTimezoneResponse> createGetListOfTimezoneResponse(GetListOfTimezoneResponse value) {
+        return new JAXBElement<GetListOfTimezoneResponse>(_GetListOfTimezoneResponse_QNAME, GetListOfTimezoneResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetListOfCountryCodeResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://iitu.kz/", name = "getListOfCountryCodeResponse")
+    public JAXBElement<GetListOfCountryCodeResponse> createGetListOfCountryCodeResponse(GetListOfCountryCodeResponse value) {
+        return new JAXBElement<GetListOfCountryCodeResponse>(_GetListOfCountryCodeResponse_QNAME, GetListOfCountryCodeResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetCityByCityNameResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://iitu.kz/", name = "getCityByCityNameResponse")
+    public JAXBElement<GetCityByCityNameResponse> createGetCityByCityNameResponse(GetCityByCityNameResponse value) {
+        return new JAXBElement<GetCityByCityNameResponse>(_GetCityByCityNameResponse_QNAME, GetCityByCityNameResponse.class, null, value);
     }
 
     /**
@@ -176,24 +302,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetCityByCityName }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://iitu.kz/", name = "getCityByCityName")
-    public JAXBElement<GetCityByCityName> createGetCityByCityName(GetCityByCityName value) {
-        return new JAXBElement<GetCityByCityName>(_GetCityByCityName_QNAME, GetCityByCityName.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetListCityByZoneName }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://iitu.kz/", name = "getListCityByZoneName")
-    public JAXBElement<GetListCityByZoneName> createGetListCityByZoneName(GetListCityByZoneName value) {
-        return new JAXBElement<GetListCityByZoneName>(_GetListCityByZoneName_QNAME, GetListCityByZoneName.class, null, value);
-    }
-
-    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetString }{@code >}}
      * 
      */
@@ -212,21 +320,21 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetListOfCountryCode }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://iitu.kz/", name = "getListOfCountryCode")
+    public JAXBElement<GetListOfCountryCode> createGetListOfCountryCode(GetListOfCountryCode value) {
+        return new JAXBElement<GetListOfCountryCode>(_GetListOfCountryCode_QNAME, GetListOfCountryCode.class, null, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetListCityByCode }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://iitu.kz/", name = "getListCityByCode")
     public JAXBElement<GetListCityByCode> createGetListCityByCode(GetListCityByCode value) {
         return new JAXBElement<GetListCityByCode>(_GetListCityByCode_QNAME, GetListCityByCode.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetCityByCityNameResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://iitu.kz/", name = "getCityByCityNameResponse")
-    public JAXBElement<GetCityByCityNameResponse> createGetCityByCityNameResponse(GetCityByCityNameResponse value) {
-        return new JAXBElement<GetCityByCityNameResponse>(_GetCityByCityNameResponse_QNAME, GetCityByCityNameResponse.class, null, value);
     }
 
     /**

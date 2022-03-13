@@ -24,10 +24,11 @@ public class Main {
         WebServiceTestService webServiceTestService = new WebServiceTestService(url, qname);
         WebServiceTest webServiceTest = webServiceTestService.getWebServiceTestPort();
         try {
-            System.out.println(webServiceTest.getCityByCityName("Londo").getGmtOffset());
+            System.out.println(webServiceTest.getCityByCityName("London").getGmtOffset());
         } catch (Exception_Exception e) {
             e.printStackTrace();
         }
+        System.out.println((long) Double.parseDouble("-4.75"));
 
     }
 }
