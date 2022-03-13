@@ -19,7 +19,7 @@ import javax.xml.ws.ResponseWrapper;
  * Generated source version: 2.2
  * 
  */
-@WebService(name = "WebServiceTest", targetNamespace = "http://kz.iitu/")
+@WebService(name = "WebServiceTest", targetNamespace = "http://iitu.kz/")
 @XmlSeeAlso({
     ObjectFactory.class
 })
@@ -35,10 +35,10 @@ public interface WebServiceTest {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "getString", targetNamespace = "http://kz.iitu/", className = "kz.iitu.GetString")
-    @ResponseWrapper(localName = "getStringResponse", targetNamespace = "http://kz.iitu/", className = "kz.iitu.GetStringResponse")
-    @Action(input = "http://kz.iitu/WebServiceTest/getStringRequest", output = "http://kz.iitu/WebServiceTest/getStringResponse", fault = {
-        @FaultAction(className = Exception_Exception.class, value = "http://kz.iitu/WebServiceTest/getString/Fault/Exception")
+    @RequestWrapper(localName = "getString", targetNamespace = "http://iitu.kz/", className = "kz.iitu.GetString")
+    @ResponseWrapper(localName = "getStringResponse", targetNamespace = "http://iitu.kz/", className = "kz.iitu.GetStringResponse")
+    @Action(input = "http://iitu.kz/WebServiceTest/getStringRequest", output = "http://iitu.kz/WebServiceTest/getStringResponse", fault = {
+        @FaultAction(className = Exception_Exception.class, value = "http://iitu.kz/WebServiceTest/getString/Fault/Exception")
     })
     public String getString(
         @WebParam(name = "arg0", targetNamespace = "")
@@ -50,15 +50,30 @@ public interface WebServiceTest {
      * 
      * @param arg0
      * @return
+     *     returns java.util.List<kz.iitu.City>
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "getListCityByCode", targetNamespace = "http://iitu.kz/", className = "kz.iitu.GetListCityByCode")
+    @ResponseWrapper(localName = "getListCityByCodeResponse", targetNamespace = "http://iitu.kz/", className = "kz.iitu.GetListCityByCodeResponse")
+    @Action(input = "http://iitu.kz/WebServiceTest/getListCityByCodeRequest", output = "http://iitu.kz/WebServiceTest/getListCityByCodeResponse")
+    public List<City> getListCityByCode(
+        @WebParam(name = "arg0", targetNamespace = "")
+        String arg0);
+
+    /**
+     * 
+     * @param arg0
+     * @return
      *     returns kz.iitu.City
      * @throws Exception_Exception
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "getCityByCityName", targetNamespace = "http://kz.iitu/", className = "kz.iitu.GetCityByCityName")
-    @ResponseWrapper(localName = "getCityByCityNameResponse", targetNamespace = "http://kz.iitu/", className = "kz.iitu.GetCityByCityNameResponse")
-    @Action(input = "http://kz.iitu/WebServiceTest/getCityByCityNameRequest", output = "http://kz.iitu/WebServiceTest/getCityByCityNameResponse", fault = {
-        @FaultAction(className = Exception_Exception.class, value = "http://kz.iitu/WebServiceTest/getCityByCityName/Fault/Exception")
+    @RequestWrapper(localName = "getCityByCityName", targetNamespace = "http://iitu.kz/", className = "kz.iitu.GetCityByCityName")
+    @ResponseWrapper(localName = "getCityByCityNameResponse", targetNamespace = "http://iitu.kz/", className = "kz.iitu.GetCityByCityNameResponse")
+    @Action(input = "http://iitu.kz/WebServiceTest/getCityByCityNameRequest", output = "http://iitu.kz/WebServiceTest/getCityByCityNameResponse", fault = {
+        @FaultAction(className = Exception_Exception.class, value = "http://iitu.kz/WebServiceTest/getCityByCityName/Fault/Exception")
     })
     public City getCityByCityName(
         @WebParam(name = "arg0", targetNamespace = "")
@@ -74,9 +89,9 @@ public interface WebServiceTest {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "getListCityByZoneName", targetNamespace = "http://kz.iitu/", className = "kz.iitu.GetListCityByZoneName")
-    @ResponseWrapper(localName = "getListCityByZoneNameResponse", targetNamespace = "http://kz.iitu/", className = "kz.iitu.GetListCityByZoneNameResponse")
-    @Action(input = "http://kz.iitu/WebServiceTest/getListCityByZoneNameRequest", output = "http://kz.iitu/WebServiceTest/getListCityByZoneNameResponse")
+    @RequestWrapper(localName = "getListCityByZoneName", targetNamespace = "http://iitu.kz/", className = "kz.iitu.GetListCityByZoneName")
+    @ResponseWrapper(localName = "getListCityByZoneNameResponse", targetNamespace = "http://iitu.kz/", className = "kz.iitu.GetListCityByZoneNameResponse")
+    @Action(input = "http://iitu.kz/WebServiceTest/getListCityByZoneNameRequest", output = "http://iitu.kz/WebServiceTest/getListCityByZoneNameResponse")
     public List<City> getListCityByZoneName(
         @WebParam(name = "arg0", targetNamespace = "")
         String arg0);
@@ -90,28 +105,13 @@ public interface WebServiceTest {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "getListCityByZoneNameAndByCode", targetNamespace = "http://kz.iitu/", className = "kz.iitu.GetListCityByZoneNameAndByCode")
-    @ResponseWrapper(localName = "getListCityByZoneNameAndByCodeResponse", targetNamespace = "http://kz.iitu/", className = "kz.iitu.GetListCityByZoneNameAndByCodeResponse")
-    @Action(input = "http://kz.iitu/WebServiceTest/getListCityByZoneNameAndByCodeRequest", output = "http://kz.iitu/WebServiceTest/getListCityByZoneNameAndByCodeResponse")
+    @RequestWrapper(localName = "getListCityByZoneNameAndByCode", targetNamespace = "http://iitu.kz/", className = "kz.iitu.GetListCityByZoneNameAndByCode")
+    @ResponseWrapper(localName = "getListCityByZoneNameAndByCodeResponse", targetNamespace = "http://iitu.kz/", className = "kz.iitu.GetListCityByZoneNameAndByCodeResponse")
+    @Action(input = "http://iitu.kz/WebServiceTest/getListCityByZoneNameAndByCodeRequest", output = "http://iitu.kz/WebServiceTest/getListCityByZoneNameAndByCodeResponse")
     public List<City> getListCityByZoneNameAndByCode(
         @WebParam(name = "arg0", targetNamespace = "")
         String arg0,
         @WebParam(name = "arg1", targetNamespace = "")
         String arg1);
-
-    /**
-     * 
-     * @param arg0
-     * @return
-     *     returns java.util.List<kz.iitu.City>
-     */
-    @WebMethod
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "getListCityByCode", targetNamespace = "http://kz.iitu/", className = "kz.iitu.GetListCityByCode")
-    @ResponseWrapper(localName = "getListCityByCodeResponse", targetNamespace = "http://kz.iitu/", className = "kz.iitu.GetListCityByCodeResponse")
-    @Action(input = "http://kz.iitu/WebServiceTest/getListCityByCodeRequest", output = "http://kz.iitu/WebServiceTest/getListCityByCodeResponse")
-    public List<City> getListCityByCode(
-        @WebParam(name = "arg0", targetNamespace = "")
-        String arg0);
 
 }

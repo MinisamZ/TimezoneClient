@@ -17,7 +17,7 @@ public class Main {
 //        // Параметры следующего конструктора смотрим в самом первом теге WSDL описания - definitions
 //        // 1-ый аргумент смотрим в атрибуте targetNamespace
 //        // 2-ой аргумент смотрим в атрибуте name
-        QName qname = new QName("http://kz.iitu/", "WebServiceTestService");
+        QName qname = new QName("http://iitu.kz/", "WebServiceTestService");
 //
 //        // Теперь мы можем дотянуться до тега service в wsdl описании,
         Service service = Service.create(url, qname);

@@ -24,17 +24,17 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _GetListCityByZoneNameAndByCodeResponse_QNAME = new QName("http://kz.iitu/", "getListCityByZoneNameAndByCodeResponse");
-    private final static QName _GetListCityByCode_QNAME = new QName("http://kz.iitu/", "getListCityByCode");
-    private final static QName _GetCityByCityNameResponse_QNAME = new QName("http://kz.iitu/", "getCityByCityNameResponse");
-    private final static QName _GetStringResponse_QNAME = new QName("http://kz.iitu/", "getStringResponse");
-    private final static QName _GetListCityByZoneNameAndByCode_QNAME = new QName("http://kz.iitu/", "getListCityByZoneNameAndByCode");
-    private final static QName _GetListCityByZoneNameResponse_QNAME = new QName("http://kz.iitu/", "getListCityByZoneNameResponse");
-    private final static QName _Exception_QNAME = new QName("http://kz.iitu/", "Exception");
-    private final static QName _GetListCityByCodeResponse_QNAME = new QName("http://kz.iitu/", "getListCityByCodeResponse");
-    private final static QName _GetCityByCityName_QNAME = new QName("http://kz.iitu/", "getCityByCityName");
-    private final static QName _GetListCityByZoneName_QNAME = new QName("http://kz.iitu/", "getListCityByZoneName");
-    private final static QName _GetString_QNAME = new QName("http://kz.iitu/", "getString");
+    private final static QName _GetListCityByZoneNameAndByCode_QNAME = new QName("http://iitu.kz/", "getListCityByZoneNameAndByCode");
+    private final static QName _Exception_QNAME = new QName("http://iitu.kz/", "Exception");
+    private final static QName _GetListCityByCodeResponse_QNAME = new QName("http://iitu.kz/", "getListCityByCodeResponse");
+    private final static QName _GetListCityByZoneNameResponse_QNAME = new QName("http://iitu.kz/", "getListCityByZoneNameResponse");
+    private final static QName _GetCityByCityName_QNAME = new QName("http://iitu.kz/", "getCityByCityName");
+    private final static QName _GetListCityByZoneName_QNAME = new QName("http://iitu.kz/", "getListCityByZoneName");
+    private final static QName _GetString_QNAME = new QName("http://iitu.kz/", "getString");
+    private final static QName _GetListCityByZoneNameAndByCodeResponse_QNAME = new QName("http://iitu.kz/", "getListCityByZoneNameAndByCodeResponse");
+    private final static QName _GetListCityByCode_QNAME = new QName("http://iitu.kz/", "getListCityByCode");
+    private final static QName _GetCityByCityNameResponse_QNAME = new QName("http://iitu.kz/", "getCityByCityNameResponse");
+    private final static QName _GetStringResponse_QNAME = new QName("http://iitu.kz/", "getStringResponse");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: kz.iitu
@@ -140,64 +140,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetListCityByZoneNameAndByCodeResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://kz.iitu/", name = "getListCityByZoneNameAndByCodeResponse")
-    public JAXBElement<GetListCityByZoneNameAndByCodeResponse> createGetListCityByZoneNameAndByCodeResponse(GetListCityByZoneNameAndByCodeResponse value) {
-        return new JAXBElement<GetListCityByZoneNameAndByCodeResponse>(_GetListCityByZoneNameAndByCodeResponse_QNAME, GetListCityByZoneNameAndByCodeResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetListCityByCode }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://kz.iitu/", name = "getListCityByCode")
-    public JAXBElement<GetListCityByCode> createGetListCityByCode(GetListCityByCode value) {
-        return new JAXBElement<GetListCityByCode>(_GetListCityByCode_QNAME, GetListCityByCode.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetCityByCityNameResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://kz.iitu/", name = "getCityByCityNameResponse")
-    public JAXBElement<GetCityByCityNameResponse> createGetCityByCityNameResponse(GetCityByCityNameResponse value) {
-        return new JAXBElement<GetCityByCityNameResponse>(_GetCityByCityNameResponse_QNAME, GetCityByCityNameResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetStringResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://kz.iitu/", name = "getStringResponse")
-    public JAXBElement<GetStringResponse> createGetStringResponse(GetStringResponse value) {
-        return new JAXBElement<GetStringResponse>(_GetStringResponse_QNAME, GetStringResponse.class, null, value);
-    }
-
-    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetListCityByZoneNameAndByCode }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://kz.iitu/", name = "getListCityByZoneNameAndByCode")
+    @XmlElementDecl(namespace = "http://iitu.kz/", name = "getListCityByZoneNameAndByCode")
     public JAXBElement<GetListCityByZoneNameAndByCode> createGetListCityByZoneNameAndByCode(GetListCityByZoneNameAndByCode value) {
         return new JAXBElement<GetListCityByZoneNameAndByCode>(_GetListCityByZoneNameAndByCode_QNAME, GetListCityByZoneNameAndByCode.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetListCityByZoneNameResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://kz.iitu/", name = "getListCityByZoneNameResponse")
-    public JAXBElement<GetListCityByZoneNameResponse> createGetListCityByZoneNameResponse(GetListCityByZoneNameResponse value) {
-        return new JAXBElement<GetListCityByZoneNameResponse>(_GetListCityByZoneNameResponse_QNAME, GetListCityByZoneNameResponse.class, null, value);
     }
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Exception }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://kz.iitu/", name = "Exception")
+    @XmlElementDecl(namespace = "http://iitu.kz/", name = "Exception")
     public JAXBElement<Exception> createException(Exception value) {
         return new JAXBElement<Exception>(_Exception_QNAME, Exception.class, null, value);
     }
@@ -206,16 +161,25 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link GetListCityByCodeResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://kz.iitu/", name = "getListCityByCodeResponse")
+    @XmlElementDecl(namespace = "http://iitu.kz/", name = "getListCityByCodeResponse")
     public JAXBElement<GetListCityByCodeResponse> createGetListCityByCodeResponse(GetListCityByCodeResponse value) {
         return new JAXBElement<GetListCityByCodeResponse>(_GetListCityByCodeResponse_QNAME, GetListCityByCodeResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetListCityByZoneNameResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://iitu.kz/", name = "getListCityByZoneNameResponse")
+    public JAXBElement<GetListCityByZoneNameResponse> createGetListCityByZoneNameResponse(GetListCityByZoneNameResponse value) {
+        return new JAXBElement<GetListCityByZoneNameResponse>(_GetListCityByZoneNameResponse_QNAME, GetListCityByZoneNameResponse.class, null, value);
     }
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetCityByCityName }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://kz.iitu/", name = "getCityByCityName")
+    @XmlElementDecl(namespace = "http://iitu.kz/", name = "getCityByCityName")
     public JAXBElement<GetCityByCityName> createGetCityByCityName(GetCityByCityName value) {
         return new JAXBElement<GetCityByCityName>(_GetCityByCityName_QNAME, GetCityByCityName.class, null, value);
     }
@@ -224,7 +188,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link GetListCityByZoneName }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://kz.iitu/", name = "getListCityByZoneName")
+    @XmlElementDecl(namespace = "http://iitu.kz/", name = "getListCityByZoneName")
     public JAXBElement<GetListCityByZoneName> createGetListCityByZoneName(GetListCityByZoneName value) {
         return new JAXBElement<GetListCityByZoneName>(_GetListCityByZoneName_QNAME, GetListCityByZoneName.class, null, value);
     }
@@ -233,9 +197,45 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link GetString }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://kz.iitu/", name = "getString")
+    @XmlElementDecl(namespace = "http://iitu.kz/", name = "getString")
     public JAXBElement<GetString> createGetString(GetString value) {
         return new JAXBElement<GetString>(_GetString_QNAME, GetString.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetListCityByZoneNameAndByCodeResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://iitu.kz/", name = "getListCityByZoneNameAndByCodeResponse")
+    public JAXBElement<GetListCityByZoneNameAndByCodeResponse> createGetListCityByZoneNameAndByCodeResponse(GetListCityByZoneNameAndByCodeResponse value) {
+        return new JAXBElement<GetListCityByZoneNameAndByCodeResponse>(_GetListCityByZoneNameAndByCodeResponse_QNAME, GetListCityByZoneNameAndByCodeResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetListCityByCode }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://iitu.kz/", name = "getListCityByCode")
+    public JAXBElement<GetListCityByCode> createGetListCityByCode(GetListCityByCode value) {
+        return new JAXBElement<GetListCityByCode>(_GetListCityByCode_QNAME, GetListCityByCode.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetCityByCityNameResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://iitu.kz/", name = "getCityByCityNameResponse")
+    public JAXBElement<GetCityByCityNameResponse> createGetCityByCityNameResponse(GetCityByCityNameResponse value) {
+        return new JAXBElement<GetCityByCityNameResponse>(_GetCityByCityNameResponse_QNAME, GetCityByCityNameResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetStringResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://iitu.kz/", name = "getStringResponse")
+    public JAXBElement<GetStringResponse> createGetStringResponse(GetStringResponse value) {
+        return new JAXBElement<GetStringResponse>(_GetStringResponse_QNAME, GetStringResponse.class, null, value);
     }
 
 }

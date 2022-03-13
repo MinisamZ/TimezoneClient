@@ -17,14 +17,14 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "WebServiceTestService", targetNamespace = "http://kz.iitu/", wsdlLocation = "http://alex-strix-notebook:8080/TestWBservice-1.0-SNAPSHOT/WebServiceTestService?wsdl")
+@WebServiceClient(name = "WebServiceTestService", targetNamespace = "http://iitu.kz/", wsdlLocation = "http://alex-strix-notebook:8080/TestWBservice-1.0-SNAPSHOT/WebServiceTestService?wsdl")
 public class WebServiceTestService
     extends Service
 {
 
     private final static URL WEBSERVICETESTSERVICE_WSDL_LOCATION;
     private final static WebServiceException WEBSERVICETESTSERVICE_EXCEPTION;
-    private final static QName WEBSERVICETESTSERVICE_QNAME = new QName("http://kz.iitu/", "WebServiceTestService");
+    private final static QName WEBSERVICETESTSERVICE_QNAME = new QName("http://iitu.kz/", "WebServiceTestService");
 
     static {
         URL url = null;
@@ -69,7 +69,7 @@ public class WebServiceTestService
      */
     @WebEndpoint(name = "WebServiceTestPort")
     public WebServiceTest getWebServiceTestPort() {
-        return super.getPort(new QName("http://kz.iitu/", "WebServiceTestPort"), WebServiceTest.class);
+        return super.getPort(new QName("http://iitu.kz/", "WebServiceTestPort"), WebServiceTest.class);
     }
 
     /**
@@ -81,7 +81,7 @@ public class WebServiceTestService
      */
     @WebEndpoint(name = "WebServiceTestPort")
     public WebServiceTest getWebServiceTestPort(WebServiceFeature... features) {
-        return super.getPort(new QName("http://kz.iitu/", "WebServiceTestPort"), WebServiceTest.class, features);
+        return super.getPort(new QName("http://iitu.kz/", "WebServiceTestPort"), WebServiceTest.class, features);
     }
 
     private static URL __getWsdlLocation() {

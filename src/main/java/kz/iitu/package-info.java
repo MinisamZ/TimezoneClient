@@ -1,2 +1,2 @@
-@javax.xml.bind.annotation.XmlSchema(namespace = "http://kz.iitu/")
+@javax.xml.bind.annotation.XmlSchema(namespace = "http://iitu.kz/")
 package kz.iitu;
